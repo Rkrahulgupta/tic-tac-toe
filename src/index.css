@@ -1,0 +1,104 @@
+body {
+  background-color: #3a8989;
+}
+
+.container {
+
+  width: 30%;
+  margin: auto;
+}
+
+.game {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+.box {
+  height: 120px;
+  background-color: white;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
+}
+
+.box h3 {
+  font-size: 36px;
+}
+
+.h1 {
+  font-size: 50px;
+  color: white;
+}
+
+.win {
+  font-size: 70px;
+  color: white;
+}
+button {
+  /* Variables */
+  --button_radius: 0.75em;
+  --button_color: #e8e8e8;
+  --button_outline_color: #000000;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 30px;
+  border: none;
+  border-radius: var(--button_radius);
+  background: var(--button_outline_color);
+}
+
+.button_top {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.75em 1.5em;
+  background: var(--button_color);
+  color: var(--button_outline_color);
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+}
+
+button:hover .button_top {
+  /* Pull the button upwards when hovered */
+  transform: translateY(-0.33em);
+}
+
+button:active .button_top {
+  /* Push the button downwards when pressed */
+  transform: translateY(0);
+}
+
+@media screen and (max-width:768px) {
+  .container {
+    width: 60%;
+  }
+}
+@media screen and (max-width:992px) {
+  .container {
+    width: 40%;
+  }
+}
+@media screen and (max-width:768px) {
+  .container {
+    width: 56%;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .container {
+    width: 70%;
+  }
+}
+@media screen and (max-width:500px) {
+  .container {
+    width: 100%;
+  }
+}
